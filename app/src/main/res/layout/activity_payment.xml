@@ -20,8 +20,8 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/imgBack"
-                    android:layout_width="40dp"
-                    android:layout_height="35dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:layout_marginTop="10dp"
                     android:src="@drawable/ic_baseline_arrow_back_24" />
                 <TextView
@@ -42,15 +42,16 @@
                     android:layout_toStartOf="@id/chat">
                     <ImageView
                         android:id="@+id/imgGioHang"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_marginEnd="5dp"
                         android:src="@drawable/ic_cart" />
                     <RelativeLayout
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
                         android:background="@drawable/custom_cart"
                         android:layout_marginStart="20dp">
+
                         <TextView
                             android:id="@+id/txtSoLuongDonHang"
                             android:layout_width="wrap_content"
@@ -58,13 +59,13 @@
                             android:layout_centerInParent="true"
                             android:text="0"
                             android:textColor="@color/white"
-                            android:textSize="15sp"
+                            android:textSize="11sp"
                             android:textStyle="bold" />
                     </RelativeLayout>
                 </RelativeLayout>
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:src="@drawable/ic_chat"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="10dp"
@@ -84,8 +85,8 @@
                 android:background="@drawable/custom_editext"
                 android:hint="Nhập họ tên"
                 android:padding="15dp"
-                android:textSize="18sp"
-                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
@@ -101,8 +102,8 @@
                 android:background="@drawable/custom_editext"
                 android:hint="Nhập email"
                 android:padding="15dp"
-                android:textSize="18sp"
-                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
@@ -118,9 +119,9 @@
                 android:background="@drawable/custom_editext"
                 android:hint="Nhập số điện thoại"
                 android:padding="15dp"
-                android:textSize="18sp"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 android:inputType="number"
-                android:textColor="@color/black"
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="match_parent"
@@ -136,8 +137,8 @@
                 android:background="@drawable/custom_editext"
                 android:hint="Nhập địa chỉ chi tiết"
                 android:padding="15dp"
-                android:textSize="18sp"
-                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 android:layout_marginTop="10dp"/>
             <RadioGroup
                 android:layout_width="match_parent"
@@ -227,24 +228,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="4dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@id/check_Pass"
                     android:text="Lưu địa chỉ nhận hàng"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
             </RelativeLayout>
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:text="TIẾP TỤC"
                 android:textStyle="bold"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:background="@drawable/custom_btn"
                 android:textColor="@color/white"
-                android:padding="10dp"
                 android:layout_margin="10dp"
                 android:id="@+id/btnTiepTuc"/>
         </LinearLayout>
