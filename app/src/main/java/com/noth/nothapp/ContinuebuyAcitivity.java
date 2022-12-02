@@ -9,6 +9,6 @@ public class ContinuebuyAcitivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_continuebuy_acitivity);
+        setContentView(R.layout.activity_continuebuy);
     }
 }
