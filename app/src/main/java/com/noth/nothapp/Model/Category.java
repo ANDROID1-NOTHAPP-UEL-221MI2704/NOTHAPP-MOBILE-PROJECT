@@ -1,6 +1,7 @@
 package com.noth.nothapp.Model;
 
 public class Category {
+    //Phân loại sản phẩm
     private String nameCategory;
 
     public Category(String nameCategory) {

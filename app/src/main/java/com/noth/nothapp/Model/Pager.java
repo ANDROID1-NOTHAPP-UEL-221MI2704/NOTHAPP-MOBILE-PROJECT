@@ -1,6 +1,7 @@
 package com.noth.nothapp.Model;
 
 public class Pager {
+    //Đánh số trang
     private String resoucePager;
 
     public Pager(String resoucePager) {
