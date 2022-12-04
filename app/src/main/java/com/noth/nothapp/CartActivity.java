@@ -50,9 +50,9 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.ICart
         //Hàm tính tổng tiền và số lượng mua hàng . Khi tăng giảm thì tiền và số lượng cũng thay đổi ngay sau đó
         int tongTien = 0;
         int sl = 0;
-        for (int i = 0; i< Util.gioHangArrayList.size(); i++){
-            tongTien+= Util.gioHangArrayList.get(i).getPriceProduct();
-            sl += Util.gioHangArrayList.get(i).getNumberProduct();
+        for (int i = 0; i< Util.CartArrayList.size(); i++){
+            tongTien+= Util.CartArrayList.get(i).getPriceProduct();
+            sl += Util.CartArrayList.get(i).getNumberProduct();
         }
         binding.txtSoLuongSP.setText("("+sl+")");
         binding.txtSoLuongMuaHang.setText(sl+"");
@@ -79,14 +79,14 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.ICart
     @Override
     public int getCount() {
         //hàm trả về số lượng của list giỏ hàng
-        if (Util.gioHangArrayList==null){
+        if (Util.CartArrayList==null){
             return 0;
         }
-        return Util.gioHangArrayList.size();
+        return Util.CartArrayList.size();
     }
 
     @Override
     public Cart getListCart(int position) {
-        return Util.gioHangArrayList.get(position);
+        return Util.CartArrayList.get(position);
     }
 }

@@ -42,11 +42,11 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
             public void onClick(View view) {
                 int soLuongMoi = Integer.parseInt(holder.binding.txtNumber.getText().toString())+1;
                 holder.binding.txtNumber.setText(String.valueOf(soLuongMoi));
-                int slHienTai = Util.gioHangArrayList.get(position).getNumberProduct();
-                int giaHienTai = Util.gioHangArrayList.get(position).getPriceProduct();
-                Util.gioHangArrayList.get(position).setNumberProduct(soLuongMoi);
+                int slHienTai = Util.CartArrayList.get(position).getNumberProduct();
+                int giaHienTai = Util.CartArrayList.get(position).getPriceProduct();
+                Util.CartArrayList.get(position).setNumberProduct(soLuongMoi);
                 double giaMoi = (soLuongMoi*giaHienTai)/slHienTai;
-                Util.gioHangArrayList.get(position).setPriceProduct((int) giaMoi);
+                Util.CartArrayList.get(position).setPriceProduct((int) giaMoi);
                 holder.binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(giaMoi) +" vnd");
                 CartActivity.EvenChangeUtil();
             }
@@ -56,11 +56,11 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
             public void onClick(View view) {
                 int soLuongMoi = Integer.parseInt(holder.binding.txtNumber.getText().toString())-1;
                 holder.binding.txtNumber.setText(String.valueOf(soLuongMoi));
-                int slHienTai = Util.gioHangArrayList.get(position).getNumberProduct();
-                int giaHienTai = Util.gioHangArrayList.get(position).getPriceProduct();
-                Util.gioHangArrayList.get(position).setNumberProduct(soLuongMoi);
+                int slHienTai = Util.CartArrayList.get(position).getNumberProduct();
+                int giaHienTai = Util.CartArrayList.get(position).getPriceProduct();
+                Util.CartArrayList.get(position).setNumberProduct(soLuongMoi);
                 double giaMoi = (soLuongMoi*giaHienTai)/slHienTai;
-                Util.gioHangArrayList.get(position).setPriceProduct((int) giaMoi);
+                Util.CartArrayList.get(position).setPriceProduct((int) giaMoi);
                 holder.binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(giaMoi) +" vnd");
                 CartActivity.EvenChangeUtil();
                 if (soLuongMoi<2){
@@ -75,7 +75,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         holder.binding.imgDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Util.gioHangArrayList.remove(holder.getAdapterPosition());
+                Util.CartArrayList.remove(holder.getAdapterPosition());
                 notifyItemRemoved(holder.getAdapterPosition());
                 CartActivity.EvenChangeUtil();
             }

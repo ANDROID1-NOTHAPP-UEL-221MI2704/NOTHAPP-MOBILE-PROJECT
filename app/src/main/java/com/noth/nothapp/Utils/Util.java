@@ -7,4 +7,3 @@ import java.util.ArrayList;
 public class Util {
     public static ArrayList<Cart> CartArrayList = new ArrayList<>();
 }
-
