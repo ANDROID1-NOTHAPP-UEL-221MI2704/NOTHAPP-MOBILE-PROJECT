@@ -3,7 +3,7 @@ package com.noth.nothapp.Model;
 public class Discount {
     private int numberSale;
     private int imageSale;
-    private String initialPrice;
+    private String initialPrice;//giá ban đầu
     private String discountPrice;
     private int Sold;
 
