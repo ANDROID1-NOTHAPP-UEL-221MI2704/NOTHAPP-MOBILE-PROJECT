@@ -8,29 +8,29 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.noth.nothapp.databinding.ItemPhoBienBinding;
+import com.noth.nothapp.databinding.ItemPopularBinding;
 import com.noth.nothapp.Model.Popular;
 
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class PhoBienAdapter extends RecyclerView.Adapter<PhoBienAdapter.PhoBienViewHolder> {
+public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.PopularViewHolder> {
     private IPopular iPopular;
 
-    public PhoBienAdapter(IPopular iPopular) {
+    public PopularAdapter(IPopular iPopular) {
         this.iPopular = iPopular;
     }
 
     @NonNull
     @Override
-    public PhoBienViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ItemPhoBienBinding binding = ItemPhoBienBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
-        return new PhoBienViewHolder(binding);
+    public PopularViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        ItemPopularBinding binding = ItemPopularBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
+        return new PopularViewHolder(binding);
     }
 
     @SuppressLint("SetTextI18n")
     @Override
-    public void onBindViewHolder(@NonNull PhoBienViewHolder holder, @SuppressLint("RecyclerView") int position) {
+    public void onBindViewHolder(@NonNull PopularViewHolder holder, @SuppressLint("RecyclerView") int position) {
         Popular popular = iPopular.getListPopular(position);
         holder.binding.namePopular.setText(popular.getNamePopular());
         holder.binding.imagePopular.setImageResource(popular.getImgPopular());
@@ -54,9 +54,9 @@ public class PhoBienAdapter extends RecyclerView.Adapter<PhoBienAdapter.PhoBienV
         Popular getListPopular(int position);
         void onClickItemPopular(int position);
     }
-    public class PhoBienViewHolder extends RecyclerView.ViewHolder{
-        ItemPhoBienBinding binding;
-        public PhoBienViewHolder(@NonNull ItemPhoBienBinding binding) {
+    public class PopularViewHolder extends RecyclerView.ViewHolder{
+        ItemPopularBinding binding;
+        public PopularViewHolder(@NonNull ItemPopularBinding binding) {
             super(binding.namePopular.getRootView());
             this.binding = binding;
         }
