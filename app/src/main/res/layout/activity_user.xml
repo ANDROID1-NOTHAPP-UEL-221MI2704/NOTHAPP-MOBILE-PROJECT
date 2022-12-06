@@ -44,17 +44,18 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="60dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/user" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Chỉnh sửa hồ sơ người dùng"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_ChangePassword"
@@ -64,17 +65,18 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/resetpass" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Đổi mật khẩu"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_AddressBook"
@@ -84,17 +86,18 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/addressbook" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Sổ địa chỉ"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_CheckOrders"
@@ -104,17 +107,18 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/formpurchase" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Các đơn hàng"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_PaymentMethod"
@@ -124,17 +128,18 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/payment" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Phương thức thanh toán"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_LogOut"
@@ -144,17 +149,18 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/logout" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Đăng xuất"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
