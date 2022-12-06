@@ -46,12 +46,12 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/striking_text"
-                android:text="5.852.200 vnd"
+                android:text="5.852.200 VNĐ"
                 android:textSize="18sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5.852.200 vnd"
+                android:text="5.852.200 VNĐ"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#5051A2"

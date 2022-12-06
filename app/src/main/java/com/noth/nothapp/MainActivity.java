@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter.i
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.activity_main);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         categoryArrayList = new ArrayList<>();
@@ -52,6 +51,16 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter.i
         onClickSearch();
         onClickCart();
         onClickToFacebookMessenger();
+        onClickNavbarUser();
+    }
+
+    private void onClickNavbarUser() {
+        binding.imvNavbarUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, UserActivity.class));
+            }
+        });
     }
 
     private void onClickToFacebookMessenger() {
@@ -130,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter.i
     private void customViewFliper() {
         //Hiển thị các banner quản cáo
         ArrayList<Pager> pagerArrayList = new ArrayList<>();
-        pagerArrayList.add(new Pager("https://img.pikbest.com/backgrounds/20210507/real-furniture-sofa-business-advertising-discount-banner-template_5944214.jpg!bwr800"));
+        pagerArrayList.add(new Pager("https://scontent.fsgn6-1.fna.fbcdn.net/v/t39.30808-6/315649569_101518716126299_8395370912680806739_n.png?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=9LmGdO6iZXAAX_QMUsF&_nc_oc=AQkA4Bsopr0ctq2hBt2Wnf0gCkv6VPqeJyk0y1ujbSLuY7zdOCFU5BjoyEmVvl0m024&_nc_ht=scontent.fsgn6-1.fna&oh=00_AfBkfLMTf1OIO5yNzWrtoPJHA4RIGZrDdtffqGyIkWpTyw&oe=63938803"));
         pagerArrayList.add(new Pager("https://admin.mhomedecor.com.vn/storage/media/v7dglvfPocxYNNrEbDGheXAHPSiw9teN6IR1CkDD.jpg"));
         pagerArrayList.add(new Pager("https://znews-photo.zingcdn.me/w660/Uploaded/wyhktpu/2021_05_07/200902_Styler_Banner_LivingRoom_Black_2.jpg"));
         pagerArrayList.add(new Pager("https://media.shoptretho.com.vn/upload/image/news/20221005/post-f.png"));

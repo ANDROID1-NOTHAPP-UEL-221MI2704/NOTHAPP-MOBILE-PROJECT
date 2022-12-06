@@ -3,9 +3,11 @@ package com.noth.nothapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
+import com.noth.nothapp.Utils.Util;
 import com.noth.nothapp.databinding.ActivityPaymentBinding;
 
 public class PaymentActivity extends AppCompatActivity {
@@ -13,7 +15,6 @@ public class PaymentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.activity_payment);
         binding = ActivityPaymentBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         Intent intent = getIntent();
@@ -25,12 +26,19 @@ public class PaymentActivity extends AppCompatActivity {
                 //Bắt đầu một lệnh mới, kích hoạt PaymentActivity và ContinuebuyActivity.
                 Intent intent = new Intent(PaymentActivity.this, ContinuebuyActivity.class);
                 //Nạp chồng dữ liệu
-                intent.putExtra("soluong",slMuaHang);
+                intent.putExtra("soluong", slMuaHang);
                 startActivity(intent);
             }
         });
         //Kích hoạt nút back
         binding.imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        binding.imgGioHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
@@ -49,6 +57,14 @@ public class PaymentActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 binding.radioDiscount.setChecked(false);
+            }
+        });
+        binding.chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 101517742793063 là facebook ID của fanpage NOTHAPP (nothapp2022)
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://messaging/" + "101517742793063"));
+                startActivity(i);
             }
         });
     }

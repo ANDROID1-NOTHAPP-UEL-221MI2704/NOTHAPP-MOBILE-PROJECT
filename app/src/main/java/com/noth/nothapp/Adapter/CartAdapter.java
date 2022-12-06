@@ -35,7 +35,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         Cart Cart = iCart.getListCart(position);
         holder.binding.imgGioHang.setImageResource(Cart.getImgCart());
         holder.binding.nameDetails.setText(Cart.getNameProduct());
-        holder.binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(Cart.getPriceProduct()) +" vnd");
+        holder.binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(Cart.getPriceProduct()) +" VNĐ");
         holder.binding.txtNumber.setText(""+Cart.getNumberProduct());
         holder.binding.btnCong.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +47,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
                 Util.CartArrayList.get(position).setNumberProduct(soLuongMoi);
                 double giaMoi = (soLuongMoi*giaHienTai)/slHienTai;
                 Util.CartArrayList.get(position).setPriceProduct((int) giaMoi);
-                holder.binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(giaMoi) +" vnd");
+                holder.binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(giaMoi) +" VNĐ");
                 CartActivity.EvenChangeUtil();
             }
         });
@@ -61,7 +61,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
                 Util.CartArrayList.get(position).setNumberProduct(soLuongMoi);
                 double giaMoi = (soLuongMoi*giaHienTai)/slHienTai;
                 Util.CartArrayList.get(position).setPriceProduct((int) giaMoi);
-                holder.binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(giaMoi) +" vnd");
+                holder.binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(giaMoi) +" VNĐ");
                 CartActivity.EvenChangeUtil();
                 if (soLuongMoi<2){
                     holder.binding.btnTru.setVisibility(View.GONE);

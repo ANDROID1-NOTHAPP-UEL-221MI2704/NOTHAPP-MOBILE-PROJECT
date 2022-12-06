@@ -8,9 +8,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.noth.nothapp.databinding.ActivitySearchBinding;
 import com.noth.nothapp.Adapter.PopularAdapter;
 import com.noth.nothapp.Model.Popular;
-import com.noth.nothapp.databinding.ActivitySearchBinding;
+import com.noth.nothapp.R;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -23,13 +24,11 @@ public class SearchActivity extends AppCompatActivity implements PopularAdapter.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search);
         binding = ActivitySearchBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         popularArrayList = new ArrayList<>();
         searchArrayList = new ArrayList<>();
         adapter = new PopularAdapter(this);
-
         addDataSearch();
         initRecylerSearch();
         onClickSearchView();
