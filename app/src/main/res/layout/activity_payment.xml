@@ -203,9 +203,9 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="15dp"
-                        android:textColor="@color/purple_500"
+                        android:textColor="#5051A2"
                         android:id="@+id/radioMomo"
-                        android:buttonTint="@color/purple_500"
+                        android:buttonTint="#5051A2"
                         android:layout_centerVertical="true"/>
                 </RelativeLayout>
             </RadioGroup>
