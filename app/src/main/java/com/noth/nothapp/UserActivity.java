@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.noth.nothapp.databinding.ActivityMainBinding;
 import com.noth.nothapp.databinding.ActivityUserBinding;
@@ -44,6 +45,14 @@ public class UserActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(UserActivity.this, AddressBookActivity.class));
+            }
+        });
+        binding.llLogOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                Toast.makeText(UserActivity.this,"Đăng xuất thành công!",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(UserActivity.this, SigninActivity.class));
             }
         });
     }
