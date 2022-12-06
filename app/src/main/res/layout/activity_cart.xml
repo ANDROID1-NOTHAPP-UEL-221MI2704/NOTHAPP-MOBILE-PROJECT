@@ -30,7 +30,6 @@
                 android:id="@+id/txtGioHang"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"/>
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -71,17 +70,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:gravity="start"
-                >
-
+                android:gravity="start">
                 <CheckBox
                     android:id="@+id/check_GioHang"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="#5051A2"
                     android:layout_gravity="center"
-                    android:checked="true"
-                    />
+                    android:checked="true" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -89,14 +85,12 @@
                     android:layout_gravity="center"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:layout_weight="1"
-                >
+                android:layout_weight="1">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -116,7 +110,6 @@
                     android:id="@+id/txtTongTienThanhToan"/>
             </LinearLayout>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="250dp"
             android:layout_height="wrap_content"
