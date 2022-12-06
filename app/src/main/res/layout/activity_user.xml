@@ -70,7 +70,7 @@
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/user" />
+                android:src="@drawable/resetpass" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/user" />
+                android:src="@drawable/addressbook" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/user" />
+                android:src="@drawable/formpurchase" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/user" />
+                android:src="@drawable/payment" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/user" />
+                android:src="@drawable/logout" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
