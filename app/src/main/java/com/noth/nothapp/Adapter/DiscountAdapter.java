@@ -41,7 +41,7 @@ public class DiscountAdapter extends RecyclerView.Adapter<DiscountAdapter.GiamGi
     }
 
     public class GiamGiaViewHolder extends RecyclerView.ViewHolder{
-        private ItemDiscountBinding binding;
+        ItemDiscountBinding binding;
         public GiamGiaViewHolder(@NonNull ItemDiscountBinding binding) {
             super(binding.txtGiamGia.getRootView());
             this.binding = binding;

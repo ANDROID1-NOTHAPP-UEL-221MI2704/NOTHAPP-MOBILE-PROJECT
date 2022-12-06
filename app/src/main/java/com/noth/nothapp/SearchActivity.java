@@ -24,7 +24,6 @@ public class SearchActivity extends AppCompatActivity implements PopularAdapter.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.activity_search);
         binding = ActivitySearchBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         popularArrayList = new ArrayList<>();

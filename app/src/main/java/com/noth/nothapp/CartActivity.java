@@ -25,11 +25,8 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.ICart
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.activity_cart);
-
         binding = ActivityCartBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         adapter = new CartAdapter(this);
         initRecylerViewCart();
         onClickBack();
