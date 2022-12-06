@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.noth.nothapp.databinding.ActivityCartBinding;
 import com.noth.nothapp.Adapter.CartAdapter;
@@ -52,11 +53,18 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.ICart
         binding.linearMuaHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Khi click mua hàng thì sẽ truyền số lượng sang màn hình thanh toán
-                Intent intent = new Intent(CartActivity.this,PaymentActivity.class);
-                int sl = Integer.parseInt(binding.txtSoLuongMuaHang.getText().toString().trim());
-                intent.putExtra("soluong",sl);
-                startActivity(intent);
+                if(Util.CartArrayList.size()==0) {
+                    Toast.makeText(CartActivity.this,"Chưa có sản phẩm trong giỏ hàng",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(CartActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    //Khi click mua hàng thì sẽ truyền số lượng sang màn hình thanh toán
+                    Intent intent = new Intent(CartActivity.this,PaymentActivity.class);
+                    int sl = Integer.parseInt(binding.txtSoLuongMuaHang.getText().toString().trim());
+                    intent.putExtra("soluong",sl);
+                    startActivity(intent);
+                }
             }
         });
     }
@@ -71,7 +79,7 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.ICart
         }
         binding.txtSoLuongSP.setText("("+sl+")");
         binding.txtSoLuongMuaHang.setText(sl+"");
-        binding.txtTongTienThanhToan.setText("vnd "+NumberFormat.getNumberInstance(Locale.getDefault()).format(tongTien));
+        binding.txtTongTienThanhToan.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(tongTien) + " VNĐ");
     }
 
     private void initRecylerViewCart() {

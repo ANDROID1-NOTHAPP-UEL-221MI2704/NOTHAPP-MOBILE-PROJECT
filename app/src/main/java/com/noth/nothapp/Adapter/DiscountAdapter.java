@@ -24,8 +24,8 @@ public class DiscountAdapter extends RecyclerView.Adapter<DiscountAdapter.GiamGi
     public void onBindViewHolder(@NonNull GiamGiaViewHolder holder, int position) {
         Discount sales = iSale.getListSale(position);
         holder.binding.txtGiamGia.setText("-"+sales.getNumberSale()+"%");
-        holder.binding.txtGiaGoc.setText(sales.getInitialPrice()+" vnd");
-        holder.binding.txtGiaSale.setText(sales.getDiscountPrice()+" vnd");
+        holder.binding.txtGiaGoc.setText(sales.getInitialPrice()+" VNĐ");
+        holder.binding.txtGiaSale.setText(sales.getDiscountPrice()+" VNĐ");
         holder.binding.txtDaBan.setText("Đã bán "+sales.getSold());
         holder.binding.imageItem.setImageResource(sales.getImageSale());
     }

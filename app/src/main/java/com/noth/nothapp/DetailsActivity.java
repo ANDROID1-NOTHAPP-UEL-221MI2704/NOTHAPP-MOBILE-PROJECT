@@ -114,7 +114,7 @@ public class DetailsActivity extends AppCompatActivity {
         if (popular!=null){
             binding.nameDetails.setText(popular.getNamePopular());
             binding.imgDetails.setImageResource(popular.getImgPopular());
-            binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(popular.getMoneyPopular()) +" vnd");
+            binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(popular.getMoneyPopular()) +" VNĐ");
             binding.rating.setRating(popular.getRating());
         }
     }

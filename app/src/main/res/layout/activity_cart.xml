@@ -65,24 +65,56 @@
             android:id="@+id/linearThanhToan"
             android:background="#EAEAEA"
             android:layout_marginBottom="20dp"
+            android:gravity="center"
             android:layout_above="@id/linearMuaHang">
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tổng thanh toán"
-                android:textSize="18sp"
-                android:layout_marginStart="10dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="wrap_content"
+                android:layout_weight="2"
+                android:gravity="start"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_GioHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#5051A2"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tất cả"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vnd 0"
-                android:textColor="#5051A2"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginStart="20dp"
-                android:id="@+id/txtTongTienThanhToan"/>
+                android:gravity="end"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng:"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 VNĐ"
+                    android:textColor="#5051A2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/txtTongTienThanhToan"/>
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -97,8 +129,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="wrap_content"

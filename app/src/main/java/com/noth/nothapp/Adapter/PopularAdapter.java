@@ -35,7 +35,7 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.PopularV
         holder.binding.namePopular.setText(popular.getNamePopular());
         holder.binding.imagePopular.setImageResource(popular.getImgPopular());
         holder.binding.rating.setRating(popular.getRating());
-        holder.binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(popular.getMoneyPopular()) +" vnd");
+        holder.binding.txtMoneyPopular.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(popular.getMoneyPopular()) +" VNĐ");
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

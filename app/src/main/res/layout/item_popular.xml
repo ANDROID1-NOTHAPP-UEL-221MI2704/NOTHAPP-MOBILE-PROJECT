@@ -62,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="5.852.200 vnd"
+                    android:text="5.852.200 VNĐ"
                     android:textColor="#5051A2"
                     android:textSize="20sp"
                     android:textStyle="bold"
