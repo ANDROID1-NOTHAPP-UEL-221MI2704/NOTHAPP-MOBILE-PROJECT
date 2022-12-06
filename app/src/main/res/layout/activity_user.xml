@@ -44,6 +44,12 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="60dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/user" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -59,6 +65,12 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/user" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -74,6 +86,12 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/user" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -89,6 +107,12 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/user" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -104,6 +128,12 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/user" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -119,6 +149,12 @@
             android:background="@drawable/custom_editext"
             android:padding="10dp"
             android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/user" />
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
