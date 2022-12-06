@@ -39,8 +39,17 @@ public class SigninActivity extends AppCompatActivity {
         customBtnDangKy();
         customBtnDangNhap();
 
+        clickToForgotPassword();
     }
 
+    private void clickToForgotPassword() {
+        binding.tvForgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SigninActivity.this, EnterUserInfoForgetPasswordActivity.class));
+            }
+        });
+    }
 
 
     private void customBtnDangKy() {

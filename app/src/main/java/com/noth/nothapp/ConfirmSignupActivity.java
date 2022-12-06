@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.noth.nothapp.R;
 import com.noth.nothapp.databinding.ActivityConfirmSignupBinding;
@@ -26,6 +27,7 @@ public class ConfirmSignupActivity extends AppCompatActivity {
         binding.btnXacNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(ConfirmSignupActivity.this,"Đăng ký thành công! Mời bạn đăng nhập!",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(ConfirmSignupActivity.this, com.noth.nothapp.SigninActivity.class)); //chuyển màn hình
             }
         });
