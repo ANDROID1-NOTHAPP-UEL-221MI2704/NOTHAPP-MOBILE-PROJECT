@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
+import com.noth.nothapp.Utils.Util;
 import com.noth.nothapp.databinding.ActivityPaymentBinding;
 
 public class PaymentActivity extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class PaymentActivity extends AppCompatActivity {
                 //Bắt đầu một lệnh mới, kích hoạt PaymentActivity và ContinuebuyActivity.
                 Intent intent = new Intent(PaymentActivity.this, ContinuebuyActivity.class);
                 //Nạp chồng dữ liệu
-                intent.putExtra("soluong",slMuaHang);
+                intent.putExtra("soluong", slMuaHang);
                 startActivity(intent);
             }
         });
