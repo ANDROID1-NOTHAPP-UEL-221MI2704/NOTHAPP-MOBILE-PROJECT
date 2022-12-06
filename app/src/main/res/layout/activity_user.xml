@@ -50,12 +50,6 @@
                 android:text="Chỉnh sửa hồ sơ người dùng"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_gravity="end"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_ChangePassword"
@@ -71,12 +65,6 @@
                 android:text="Đổi mật khẩu"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_gravity="end"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_AddressBook"
@@ -92,12 +80,6 @@
                 android:text="Sổ địa chỉ"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_gravity="end"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_CheckOrders"
@@ -113,12 +95,6 @@
                 android:text="Các đơn hàng"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_gravity="end"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_PaymentMethod"
@@ -134,12 +110,6 @@
                 android:text="Phương thức thanh toán"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_gravity="end"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_LogOut"
@@ -155,12 +125,6 @@
                 android:text="Đăng xuất"
                 android:textSize="20dp"
                 android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:src="@drawable/ic_baseline_arrow_forward_24"
-                android:layout_marginStart="20dp"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
