@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.noth.nothapp.databinding.ActivityConfirmSignupBinding;
 import com.noth.nothapp.databinding.ActivityResetPassBinding;
 
 public class ResetPassActivity extends AppCompatActivity {
@@ -28,8 +27,8 @@ public class ResetPassActivity extends AppCompatActivity {
         binding.btnConfirmChangePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ResetPassActivity.this,"Đổi mật khẩu thành công! Đăng nhập lại!",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(ResetPassActivity.this, SigninActivity.class));
+                Toast.makeText(ResetPassActivity.this,"Đổi mật khẩu thành công!",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ResetPassActivity.this, UserActivity.class));
             }
         });
     }

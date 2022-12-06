@@ -52,6 +52,16 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter.i
         onClickSearch();
         onClickCart();
         onClickToFacebookMessenger();
+        onClickNavbarUser();
+    }
+
+    private void onClickNavbarUser() {
+        binding.imvNavbarUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, UserActivity.class));
+            }
+        });
     }
 
     private void onClickToFacebookMessenger() {
