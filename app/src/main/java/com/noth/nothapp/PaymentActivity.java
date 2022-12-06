@@ -38,6 +38,13 @@ public class PaymentActivity extends AppCompatActivity {
             }
         });
 
+        binding.imgGioHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
         //Tạo hoạt động cho 2 nút radioDiscount và radioMomo,
         // mặc định giá trị là false để hệ thống ko tick sẵn --> cho khách hàng tick chọn
         binding.radioDiscount.setOnClickListener(new View.OnClickListener() {
