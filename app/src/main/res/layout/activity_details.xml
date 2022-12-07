@@ -173,12 +173,12 @@
             android:layout_alignParentBottom="true"
             android:orientation="horizontal">
             <LinearLayout
+                android:id="@+id/imv_ToFacebook"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
                 <ImageView
-                    android:id="@+id/imv_ToFacebook"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center_horizontal"

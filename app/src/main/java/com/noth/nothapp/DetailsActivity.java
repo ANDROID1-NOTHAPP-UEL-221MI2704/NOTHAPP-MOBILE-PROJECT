@@ -100,7 +100,7 @@ public class DetailsActivity extends AppCompatActivity {
         binding.imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DetailsActivity.this,MainActivity.class));
+                finish();
             }
         });
     }

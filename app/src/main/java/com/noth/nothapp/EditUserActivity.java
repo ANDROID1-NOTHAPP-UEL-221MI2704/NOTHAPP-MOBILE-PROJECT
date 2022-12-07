@@ -25,8 +25,8 @@ public class EditUserActivity extends AppCompatActivity {
         binding.btnConfirmChangeInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
                 Toast.makeText(EditUserActivity.this,"Thay đổi thông tin hồ sơ thành công",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(EditUserActivity.this, MainActivity.class));
             }
         });
     }

@@ -28,7 +28,7 @@ public class ResetPassActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(ResetPassActivity.this,"Đổi mật khẩu thành công!",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(ResetPassActivity.this, UserActivity.class));
+                finish();
             }
         });
     }

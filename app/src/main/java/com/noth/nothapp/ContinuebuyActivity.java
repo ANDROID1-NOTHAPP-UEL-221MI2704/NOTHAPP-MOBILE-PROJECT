@@ -25,7 +25,7 @@ public class ContinuebuyActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Xóa sản phẩm đã ấn mua thành công, sau đó khởi tạo Màn hình Cảm ơn và Tiếp tục mua hàng
                 // Util.CartArrayList.clear();
-                startActivity(new Intent(ContinuebuyActivity.this, MainActivity.class));
+                finish();
             }
         });
         binding.imgBack.setOnClickListener(new View.OnClickListener() {

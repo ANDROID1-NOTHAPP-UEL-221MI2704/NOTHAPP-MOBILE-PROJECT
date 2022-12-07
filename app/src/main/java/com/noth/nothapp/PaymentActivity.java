@@ -28,6 +28,7 @@ public class PaymentActivity extends AppCompatActivity {
                 //Nạp chồng dữ liệu
                 intent.putExtra("soluong", slMuaHang);
                 startActivity(intent);
+                finish();
             }
         });
         //Kích hoạt nút back

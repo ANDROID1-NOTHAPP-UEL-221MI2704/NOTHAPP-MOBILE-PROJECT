@@ -60,6 +60,7 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.ICart
                     int sl = Integer.parseInt(binding.txtSoLuongMuaHang.getText().toString().trim());
                     intent.putExtra("soluong",sl);
                     startActivity(intent);
+                    // finish();
                 }
             }
         });

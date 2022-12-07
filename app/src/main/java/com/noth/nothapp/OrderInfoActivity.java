@@ -19,7 +19,6 @@ public class OrderInfoActivity extends AppCompatActivity {
         binding.imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(OrderInfoActivity.this, NotifyActivity.class));
                 finish();
             }
         });
