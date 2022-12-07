@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.noth.nothapp.databinding.ActivityDetailsBinding;
 import com.noth.nothapp.Model.Cart;
@@ -29,8 +30,39 @@ public class DetailsActivity extends AppCompatActivity {
         onShowData();
         onBack();
         customNumberOder();
+        onClickThemVaoGio();
         onClickMuaNgay();
         onClickToFacebookMessenger();
+    }
+
+    private void onClickThemVaoGio() {
+        binding.layoutThemVaoGio.setOnClickListener(new View.OnClickListener() { //Xử lý sự kiện nút mua ngay
+            @Override
+            public void onClick(View view) {
+                if (Util.CartArrayList.size()>0){
+                    int soLuongSp = Integer.parseInt(binding.txtNumber.getText().toString()); //Lấy ra số lượng sản phẩm
+                    boolean exits = false;
+                    //Kiểm tra nếu người dùng đặt cùng 1 sản phẩm thì sẽ tăng số lượng sản phẩm đó lên
+                    for(int i=0;i<Util.CartArrayList.size();i++){
+                        if (Util.CartArrayList.get(i).getNameProduct().equals(popular.getNamePopular())){
+                            Util.CartArrayList.get(i).setNumberProduct(Util.CartArrayList.get(i).getNumberProduct()+soLuongSp);
+                            Util.CartArrayList.get(i).setPriceProduct(Util.CartArrayList.get(i).getNumberProduct()*popular.getMoneyPopular());
+                            exits = true;
+                        }
+                    }
+                    if (!exits){
+                        int sl = Integer.parseInt(binding.txtNumber.getText().toString());
+                        int giaMoi =sl*popular.getMoneyPopular();
+                        Util.CartArrayList.add(new Cart(popular.getImgPopular(),popular.getNamePopular(),giaMoi,sl));
+                    }
+                }else {
+                    int sl = Integer.parseInt(binding.txtNumber.getText().toString());
+                    int giaMoi =sl*popular.getMoneyPopular();
+                    Util.CartArrayList.add(new Cart(popular.getImgPopular(),popular.getNamePopular(),giaMoi,sl));
+                }
+                Toast.makeText(DetailsActivity.this,"Đã thêm sản phẩm vào giỏ hàng",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void onClickToFacebookMessenger() {
