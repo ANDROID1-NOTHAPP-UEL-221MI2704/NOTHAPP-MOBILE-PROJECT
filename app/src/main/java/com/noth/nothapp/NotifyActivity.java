@@ -27,7 +27,6 @@ public class NotifyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(NotifyActivity.this, OrderInfoActivity.class));
-                finish();
             }
         });
         binding.chat.setOnClickListener(new View.OnClickListener() {
