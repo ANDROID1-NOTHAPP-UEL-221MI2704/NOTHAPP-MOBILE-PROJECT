@@ -42,6 +42,7 @@ public class SignupActivity extends AppCompatActivity {
                     //Thêm dữ liệu số điện thoại vào trong bảng database User
                     database.QueryData("INSERT INTO User VALUES(null,'" + phone + "')");
                     startActivity(new Intent(SignupActivity.this, ConfirmSignupActivity.class));
+                    finish();
                 }
             }
         });

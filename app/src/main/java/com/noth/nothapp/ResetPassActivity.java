@@ -21,7 +21,7 @@ public class ResetPassActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(ResetPassActivity.this,"Đã hủy thao tác đổi mật khẩu!",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(ResetPassActivity.this, UserActivity.class));
+                finish();
             }
         });
         binding.btnConfirmChangePassword.setOnClickListener(new View.OnClickListener() {

@@ -29,6 +29,7 @@ public class EnterOtpForgetPasswordActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(EnterOtpForgetPasswordActivity.this,"Xác thực thành công! Hãy đổi mật khẩu!",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(EnterOtpForgetPasswordActivity.this, ForgotPasswordActivity.class));
+                finish();
             }
         });
     }

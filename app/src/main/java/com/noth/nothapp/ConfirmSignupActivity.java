@@ -27,7 +27,7 @@ public class ConfirmSignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(ConfirmSignupActivity.this,"Đăng ký thành công! Mời bạn đăng nhập!",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(ConfirmSignupActivity.this, com.noth.nothapp.SigninActivity.class)); //chuyển màn hình
+                finish();
             }
         });
     }

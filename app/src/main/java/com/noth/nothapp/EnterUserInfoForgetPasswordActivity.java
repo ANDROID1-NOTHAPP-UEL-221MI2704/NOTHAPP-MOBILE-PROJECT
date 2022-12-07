@@ -21,6 +21,7 @@ public class EnterUserInfoForgetPasswordActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(EnterUserInfoForgetPasswordActivity.this,"Vui lòng nhập OTP được gửi đến SĐT bạn nhập",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(EnterUserInfoForgetPasswordActivity.this, EnterOtpForgetPasswordActivity.class));
+                finish();
             }
         });
         binding.imgBack.setOnClickListener(new View.OnClickListener() {

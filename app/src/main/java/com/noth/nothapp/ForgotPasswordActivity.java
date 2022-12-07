@@ -21,14 +21,14 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(ForgotPasswordActivity.this,"Đã hủy thao tác quên mật khẩu!",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(ForgotPasswordActivity.this, SigninActivity.class));
+                finish();
             }
         });
         binding.btnConfirmChangePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(ForgotPasswordActivity.this,"Đặt mật khẩu mới thành công! Đăng nhập lại!",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(ForgotPasswordActivity.this, SigninActivity.class));
+                finish();
             }
         });
     }

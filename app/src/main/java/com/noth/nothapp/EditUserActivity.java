@@ -19,7 +19,7 @@ public class EditUserActivity extends AppCompatActivity {
         binding.imvBackToLoginScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(EditUserActivity.this, UserActivity.class));
+                finish();
             }
         });
         binding.btnConfirmChangeInfo.setOnClickListener(new View.OnClickListener() {
