@@ -21,7 +21,7 @@ public class EnterOtpForgetPasswordActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(EnterOtpForgetPasswordActivity.this,"Đã hủy thao tác quên mật khẩu!",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(EnterOtpForgetPasswordActivity.this, SigninActivity.class));
+                finish();
             }
         });
         binding.btnXacNhan.setOnClickListener(new View.OnClickListener() {
