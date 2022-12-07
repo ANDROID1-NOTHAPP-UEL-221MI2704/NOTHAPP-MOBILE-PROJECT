@@ -26,7 +26,7 @@ public class NotifyActivity extends AppCompatActivity {
         binding.imgGioHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(NotifyActivity.this, OrderInfoActivity.class));
+                startActivity(new Intent(NotifyActivity.this, CartActivity.class));
             }
         });
         binding.chat.setOnClickListener(new View.OnClickListener() {
