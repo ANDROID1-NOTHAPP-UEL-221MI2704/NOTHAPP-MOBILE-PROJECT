@@ -23,6 +23,12 @@ public class UserActivity extends AppCompatActivity {
                 finish();
             }
         });
+        binding.llCheckOrders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(UserActivity.this, OrderInfoActivity.class));
+            }
+        });
         binding.llChinhSuaHoSo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
