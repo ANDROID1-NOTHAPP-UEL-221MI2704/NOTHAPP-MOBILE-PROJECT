@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter.i
         categoryArrayList = new ArrayList<>();
         giamGiaArrayList = new ArrayList<>();
         phoBienArrayList = new ArrayList<>();
-        fa=this;
+        fa = this;
         customViewFliper();
         addDataCategory();
         addDataGiamGia();

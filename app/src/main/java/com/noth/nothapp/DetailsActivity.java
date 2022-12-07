@@ -22,11 +22,13 @@ public class DetailsActivity extends AppCompatActivity {
     ActivityDetailsBinding binding;
     Popular popular;
     int numberOder = 1;
+    public static DetailsActivity faDetails;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        faDetails = this;
         onShowData();
         onBack();
         customNumberOder();

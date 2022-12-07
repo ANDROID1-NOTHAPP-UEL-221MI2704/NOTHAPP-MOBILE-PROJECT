@@ -22,12 +22,14 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.ICart
     private static ActivityCartBinding binding;
     CartAdapter adapter;
     int slMua = 0;
+    public static CartActivity faCart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityCartBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         adapter = new CartAdapter(this);
+        faCart = this;
         initRecylerViewCart();
         onClickBack();
         EvenChangeUtil();
