@@ -16,8 +16,7 @@
             android:layout_height="wrap_content"
             android:buttonTint="#5051A2"
             android:layout_gravity="center"
-            android:checked="true"
-            />
+            android:checked="true"/>
         <androidx.cardview.widget.CardView
             android:layout_width="120dp"
             android:layout_height="120dp"

@@ -53,7 +53,12 @@ public class UserActivity extends AppCompatActivity {
                 startActivity(new Intent(UserActivity.this, AddressBookActivity.class));
             }
         });
-
+        binding.llPaymentMethod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserActivity.this, PaymentMethodActivity.class));
+            }
+        });
         binding.llLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
