@@ -60,7 +60,10 @@ public class DetailsActivity extends AppCompatActivity {
                     int giaMoi =sl*popular.getMoneyPopular();
                     Util.CartArrayList.add(new Cart(popular.getImgPopular(),popular.getNamePopular(),giaMoi,sl));
                 }
-                Toast.makeText(DetailsActivity.this,"Đã thêm sản phẩm vào giỏ hàng",Toast.LENGTH_SHORT).show();
+                String thongBaoDaThemVaoGio;
+                thongBaoDaThemVaoGio="Đã thêm " + binding.txtNumber.getText().toString() + " sp " +
+                        binding.nameDetails.getText().toString() + " vào giỏ hàng";
+                Toast.makeText(DetailsActivity.this, thongBaoDaThemVaoGio,Toast.LENGTH_SHORT).show();
             }
         });
     }
