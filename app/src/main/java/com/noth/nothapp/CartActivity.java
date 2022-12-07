@@ -52,8 +52,7 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.ICart
             public void onClick(View view) {
                 if(Util.CartArrayList.size()==0) {
                     Toast.makeText(CartActivity.this,"Chưa có sản phẩm trong giỏ hàng",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(CartActivity.this, MainActivity.class);
-                    startActivity(intent);
+                    finish();
                 }
                 else {
                     //Khi click mua hàng thì sẽ truyền số lượng sang màn hình thanh toán

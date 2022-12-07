@@ -37,5 +37,12 @@ public class NotifyActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        binding.tvXemTatCaOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(NotifyActivity.this, CartActivity.class));
+            }
+        });
+
     }
 }

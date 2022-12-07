@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter.i
     ArrayList<Category> categoryArrayList;
     ArrayList<Discount> giamGiaArrayList;
     ArrayList<Popular> phoBienArrayList;
-
+    public static MainActivity fa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements CategoryAdapter.i
         categoryArrayList = new ArrayList<>();
         giamGiaArrayList = new ArrayList<>();
         phoBienArrayList = new ArrayList<>();
+        fa=this;
         customViewFliper();
         addDataCategory();
         addDataGiamGia();

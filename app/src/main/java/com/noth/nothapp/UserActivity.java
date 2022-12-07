@@ -53,10 +53,12 @@ public class UserActivity extends AppCompatActivity {
                 startActivity(new Intent(UserActivity.this, AddressBookActivity.class));
             }
         });
+
         binding.llLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
+                MainActivity.fa.finish();
                 Toast.makeText(UserActivity.this,"Đăng xuất thành công!",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(UserActivity.this, SigninActivity.class));
             }
