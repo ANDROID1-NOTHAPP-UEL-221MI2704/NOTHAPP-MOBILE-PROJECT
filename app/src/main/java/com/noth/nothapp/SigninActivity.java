@@ -79,7 +79,7 @@ public class SigninActivity extends AppCompatActivity {
                     finish();
                 }
                 else {
-                    Toast.makeText(SigninActivity.this,"Đăng nhập thất bại",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SigninActivity.this,"Đăng nhập thất bại! Check account và internet!",Toast.LENGTH_SHORT).show();
                 }
             }
         });
