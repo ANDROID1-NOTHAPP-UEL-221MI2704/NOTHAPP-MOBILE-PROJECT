@@ -69,8 +69,7 @@ public class SigninActivity extends AppCompatActivity {
                 for(int i=0;i<userArrayList.size();i++){
                     if (phone.equals(userArrayList.get(i).getPhone())){
                         check = true;
-                        break;
-                    }else if(!phone.equals(userArrayList.get(i).getPhone())) {
+                    }else {
                         check = false;
                     }
                 }
@@ -79,7 +78,7 @@ public class SigninActivity extends AppCompatActivity {
                     startActivity(new Intent(SigninActivity.this, MainActivity.class));
                     finish();
                 }
-                else if (!check) {
+                else {
                     Toast.makeText(SigninActivity.this,"Đăng nhập thất bại! Check account và internet!",Toast.LENGTH_SHORT).show();
                 }
             }
