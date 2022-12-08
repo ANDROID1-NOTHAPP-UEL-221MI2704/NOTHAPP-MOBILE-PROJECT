@@ -47,12 +47,6 @@ public class UserActivity extends AppCompatActivity {
                 startActivity(new Intent(UserActivity.this, AddressBookActivity.class));
             }
         });
-        binding.llAddressBook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(UserActivity.this, AddressBookActivity.class));
-            }
-        });
         binding.llPaymentMethod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
